@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafb; padding: 20px; }
+    h1 { text-align: center; color: #774ba2; }
+    .gallery {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px; margin-top: 20px;
+    }
+    .gallery img {
+      width: 95%; height: 400px; object-fit: cover;
+      border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+      img{
+          width:400px;
+          height:300px;
+      }
+    a.btn { display: inline-block; margin-top: 20px; padding: 10px 15px; background: #774ba2; color: white; border-radius: 5px; text-           decoration: none; }
+    a.btn:hover { background: #5563c1; }
+  </style>
+</head>
+<body>
+  <h1>My Gallery</h1>
+  <div class="gallery">
+    <img src="cartoon1.png" alt="Gallery Image">
+    <img src="cartoon2.png" alt="Gallery Image">
+    <img src="cartoon3.png" alt="Gallery Image">
+    <img src="cartoon4.png" alt="Gallery Image">
+  </div>
+  <div class="gallery">
+    <img src="cartoon5.png" alt="Gallery Image">
+    <img src="image.png" alt="Gallery Image">
+    <img src="my.png" alt="Gallery Image">
+    <img src="cartoon1.png" alt="Gallery Image">
+  </div>
+  <div class="gallery">
+    <img src="cartoon2.png" alt="Gallery Image">
+    <img src="cartoon3.png" alt="Gallery Image">
+    <img src="cartoon4.png" alt="Gallery Image">
+    <img src="image1.png" alt="Gallery Image">
+  </div>
+        <a href="index2.html" taxt-align="center" class="btn">⬅ Back to Portfolio</a>
+
+</body>
+</html>
